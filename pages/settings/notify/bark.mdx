@@ -1,0 +1,60 @@
+import { Cards, Card } from 'nextra/components'
+
+<Cards>
+  <Card
+    title="BARK"
+    href="/settings/notify/bark"
+  />
+  <Card
+    title="CoolPush"
+    href="/settings/notify/coolpush"
+  />
+  <Card
+    title="钉钉"
+    href="/settings/notify/dingtalk"
+  />
+  <Card
+    title="飞书"
+    href="/settings/notify/feishu"
+  />
+  <Card
+    title="PushPlus"
+    href="/settings/notify/pushplus"
+  />
+  <Card
+    title="Qmsg 酱"
+    href="/settings/notify/qmsg"
+  />
+  <Card
+    title="企业微信"
+    href="/settings/notify/qywx"
+  />
+  <Card
+    title="Server 酱"
+    href="/settings/notify/server"
+  />
+  <Card
+    title="Telegram"
+    href="/settings/notify/telegram"
+  />
+  <Card
+    title="Server 酱 TURBO"
+    href="/settings/notify/turbo"
+  />
+</Cards>
+
+# BARK
+
+### 配置示例
+
+```json
+{
+  "BARK_URL": "",
+  "MERGE_PUSH": ""
+}
+```
+
+|       Name       |   归属   | 属性 | 说明                                                                                                            |
+| :--------------: | :------: | :--: | :-------------------------------------------------------------------------------------------------------------- |
+|  _**BARK_URL**_  |   BARK   | 推送 | BARK 推送[使用](https://bark.day.app/#/) ,填写 `BARK_URL` 即可，例如: `https://api.day.app/DxHcxxxxxRxxxxxxcm/` |
+| _**MERGE_PUSH**_ | 合并推送 | 配置 | **true**: 将推送消息合并；**false**: 分开推送                                                                   |
