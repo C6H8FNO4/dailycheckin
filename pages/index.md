@@ -64,7 +64,7 @@
 | 🟢️  | ACFUN    | [AcFun](https://www.acfun.cn/)                    | 24.01.13 | 每日签到香蕉                                                                                    |
 | 🟢️  | IQIYI    | [爱奇艺](https://www.iqiyi.com/)                  | 24.01.13 | 签 3 天奖 1 天，7 天奖 1 天，14 天奖 1 天，满签奖 5 天；日常任务 4 成长值；随机成长值；三次抽奖 |
 | 🟢️  | SMZDM    | [什么值得买](https://www.smzdm.com/)              | 24.01.13 | 签到和抽奖                                                                                      |
-| 🟢️  | SMZDM    | [阿里云盘](https://www.aliyundrive.com/drive/)    | 24.01.13 | 签到获取免费会员和空间                                                                          |
+| 🟢️  | ALIYUN   | [阿里云盘](https://www.aliyundrive.com/drive/)    | 24.01.13 | 签到获取免费会员和空间                                                                          |
 | 🟢️  | IMAOTAI  | i 茅台                                            | 24.01.13 | 申购生肖茅台                                                                                    |
 | 🟤   | MIMOTION | 小米运动                                          | 24.01.13 | 每日小米运动刷步数                                                                              |
 | 🟢️  | BAIDU    | [百度站点](https://ziyuan.baidu.com/site/index#/) | 24.01.13 | 提交网站页面供百度收录                                                                          |
