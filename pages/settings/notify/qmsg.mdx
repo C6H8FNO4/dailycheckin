@@ -26,8 +26,12 @@ import { Cards, Card } from 'nextra/components'
     href="/settings/notify/qmsg"
   />
   <Card
-    title="企业微信"
+    title="企业微信应用消息"
     href="/settings/notify/qywx"
+  />
+  <Card
+    title="企业微信群机器人"
+    href="/settings/notify/qywxrobot"
   />
   <Card
     title="Server 酱"
@@ -47,7 +51,7 @@ import { Cards, Card } from 'nextra/components'
 
 ### 配置示例
 
-```json
+```json filename="config.json" copy
 {
   "QMSG_KEY": "",
   "QMSG_TYPE": "",
@@ -55,8 +59,8 @@ import { Cards, Card } from 'nextra/components'
 }
 ```
 
-|       Name       |   归属   | 属性 | 说明                                                                                           |
-| :--------------: | :------: | :--: | :--------------------------------------------------------------------------------------------- |
-|  _**QMSG_KEY**_  | Qmsg 酱  | 推送 | Qmsg 酱推送[官方文档](https://qmsg.zendee.cn/) ,填写 `KEY` 代码即可                            |
-| _**QMSG_TYPE**_  | Qmsg 酱  | 推送 | Qmsg 酱推送[官方文档](https://qmsg.zendee.cn/) ,如果需要推送到群填写 `group`,其他的都推送到 QQ |
-| _**MERGE_PUSH**_ | 合并推送 | 配置 | **true**: 将推送消息合并；**false**: 分开推送                                                  |
+|       参数       |                                              说明                                              |
+| :--------------: | :--------------------------------------------------------------------------------------------: |
+|  _**QMSG_KEY**_  |              Qmsg 酱推送[官方文档](https://qmsg.zendee.cn/) ,填写 `KEY` 代码即可               |
+| _**QMSG_TYPE**_  | Qmsg 酱推送[官方文档](https://qmsg.zendee.cn/) ,如果需要推送到群填写 `group`,其他的都推送到 QQ |
+| _**MERGE_PUSH**_ |                         **true**: 将推送消息合并；**false**: 分开推送                          |

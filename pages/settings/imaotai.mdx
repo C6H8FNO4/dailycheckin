@@ -57,7 +57,7 @@ import { Steps } from 'nextra/components'
 
 ### 配置示例
 
-```json
+```json filename="config.json" copy
 {
   "IMAOTAI": [
     {
@@ -102,12 +102,12 @@ import { Steps } from 'nextra/components'
 <Steps>
 ### 安装依赖项
  
-```bash
+```bash copy
 pip install requests~=2.31.0 pycryptodome==3.17
 ```
 ### 运行 python 代码获取配置
 
-```python filename='login.py'
+```python filename="login.py" copy
 import hashlib
 import json
 import time
@@ -289,7 +289,7 @@ if __name__ == "__main__":
             break
 ```
 
-#### 修改代码中的 AMAP_KEY 需要自己去[高德地图](https://console.amap.com/dev/key/app)申请
+#### 修改代码中的 `AMAP_KEY` 需要自己去[高德地图](https://console.amap.com/dev/key/app)申请
 
 ### 获取到数据后填入到 `config.json` 中
 

@@ -23,7 +23,7 @@ import { FileTree } from 'nextra/components'
 
 运行如下命令一键启动并创建服务
 
-```bash
+```bash copy
 curl https://raw.githubusercontent.com/sitoi/dailycheckin/main/docker_start.sh | bash
 ```
 
@@ -74,25 +74,25 @@ curl https://raw.githubusercontent.com/sitoi/dailycheckin/main/docker_start.sh |
 
 #### 运行全部脚本
 
-```bash
+```bash copy
 docker exec -it dailycheckin dailycheckin
 ```
 
 #### 运行指定脚本（包含），可以同时选择多个，用「空格」分开
 
-```bash
+```bash copy
 docker exec -it dailycheckin dailycheckin --include MUSIC163 BAIDU
 ```
 
 #### 运行指定脚本（排除），可以同时选择多个，用「空格」分开
 
-```bash
+```bash copy
 docker exec -it dailycheckin dailycheckin --exclude MUSIC163 BAIDU
 ```
 
 ## 更新
 
-```bash
+```bash copy
 docker exec dailycheckin sh /dailycheckin/default_task.sh
 ```
 
@@ -102,13 +102,13 @@ docker exec dailycheckin sh /dailycheckin/default_task.sh
 
 ##### 方式一（Python 环境）
 
-```bash
+```bash copy
 pip3 install docker-compose
 ```
 
 ##### 方式二
 
-```
+```bash copy
 sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```

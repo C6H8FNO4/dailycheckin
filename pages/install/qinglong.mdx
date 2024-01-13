@@ -23,19 +23,49 @@ import { Steps } from 'nextra/components'
 <Steps>
 ### 选择「依赖管理」
 
-### 新建依赖
+![点击依赖管理](../img/qinglong/1.png)
 
-### 「依赖类型」python3
+### 新建 Linux 依赖
 
-### 「名称」输入 dailycheckin
+#### 1. 点击 Linux
 
-### 点击安装
+![点击 Linux](../img/qinglong/2.png)
+
+#### 2. 点击新建依赖
+
+![点击新建依赖](../img/qinglong/3.png)
+
+#### 3. 输入依赖
+
+```text copy
+gcc g++ make libffi-dev openssl-dev
+```
+
+![输入依赖](../img/qinglong/4.png)
+
+#### 4. 点击确认，等待安装完成
+
+![点击确认](../img/qinglong/5.png)
+
+### 新建 Python 依赖
+
+#### 1. 点击 Python
+
+![点击 Linux](../img/qinglong/6.png)
+
+#### 2. 点击新建依赖
+
+![点击新建依赖](../img/qinglong/7.png)
+
+#### 3. 输入 dailycheckin
+
+![输入 dailycheckin](../img/qinglong/8.png)
+
+#### 4. 点击确认，等待安装完成
+
+![点击确认](../img/qinglong/9.png)
 
 </Steps>
-
-```bash
-apk add --no-cache gcc g++ python python-dev py-pip mysql-dev linux-headers libffi-dev openssl-dev .build-deps  musl-dev  python3-dev libffi openssl
-```
 
 ## 二、配置
 
@@ -50,27 +80,34 @@ apk add --no-cache gcc g++ python python-dev py-pip mysql-dev linux-headers libf
 <Steps>
 ### 选择「脚本管理」
 
+![点击选择「脚本管理」](../img/qinglong/10.png)
+
 ### 点击 ➕ 添加
 
-### 输入文件名 config.json
+![点击 ➕ 添加](../img/qinglong/11.png)
 
-### 「名称」输入 dailycheckin
+### 输入文件名 config.json 后确定
+
+![输入文件名](../img/qinglong/12.png)
 
 ### 配置 config.json 文件
 
 参考[配置说明文档](/settings/config) ，并修改 `config.json`
+
+![编辑配置](../img/qinglong/13.png)
+![配置示例](../img/qinglong/14.png)
 
 </Steps>
 
 ## 三、运行
 
 1. 运行全部脚本
-   ![定时任务](../img/ql-base.png)
+   ![定时任务](../img/qinglong/15.png)
 2. 运行指定脚本（包含），可以同时选择多个，用「空格」分开
-   ![定时任务](../img/ql-include.png)
+   ![定时任务](../img/qinglong/16.png)
 3. 运行指定脚本（排除），可以同时选择多个，用「空格」分开
-   ![定时任务](../img/ql-exclude.png)
+   ![定时任务](../img/qinglong/17.png)
 
 ## 四、更新
 
-![定时更新](../img/ql-update.png)
+![定时更新](../img/qinglong/18.png)

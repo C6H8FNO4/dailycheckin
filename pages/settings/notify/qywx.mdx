@@ -26,8 +26,12 @@ import { Cards, Card } from 'nextra/components'
     href="/settings/notify/qmsg"
   />
   <Card
-    title="企业微信"
+    title="企业微信应用消息"
     href="/settings/notify/qywx"
+  />
+  <Card
+    title="企业微信群机器人"
+    href="/settings/notify/qywxrobot"
   />
   <Card
     title="Server 酱"
@@ -43,11 +47,11 @@ import { Cards, Card } from 'nextra/components'
   />
 </Cards>
 
-# 企业微信
+# 企业微信应用消息
 
 ### 配置示例
 
-```json
+```json filename="config.json" copy
 {
   "QYWX_AGENTID": "",
   "QYWX_CORPID": "",
@@ -59,12 +63,11 @@ import { Cards, Card } from 'nextra/components'
 }
 ```
 
-|         Name          |       归属       | 属性 | 说明                                                                                                                                                                                                                           |
-| :-------------------: | :--------------: | :--: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    _**QYWX_KEY**_     | 企业微信群机器人 | 推送 | 密钥，企业微信推送 `webhook` 后面的 `key` 详见[官方说明文档](https://work.weixin.qq.com/api/doc/90000/90136/91770)                                                                                                             |
-|   _**QYWX_CORPID**_   | 企业微信应用消息 | 推送 | corpid                                                                                                                                                                                                                         |
-|  _**QYWX_AGENTID**_   | 企业微信应用消息 | 推送 | agentid                                                                                                                                                                                                                        |
-| _**QYWX_CORPSECRET**_ | 企业微信应用消息 | 推送 | corpsecret                                                                                                                                                                                                                     |
-|   _**QYWX_TOUSER**_   | 企业微信应用消息 | 推送 | touser                                                                                                                                                                                                                         |
-|  _**QYWX_MEDIA_ID**_  | 企业微信应用消息 | 推送 | media_id [参考文档 1](https://note.youdao.com/ynoteshare1/index.html?id=351e08a72378206f9dd64d2281e9b83b&type=note) [参考文档 2](https://note.youdao.com/ynoteshare1/index.html?id=1a0c8aff284ad28cbd011b29b3ad0191&type=note) |
-|   _**MERGE_PUSH**_    |     合并推送     | 配置 | **true**: 将推送消息合并；**false**: 分开推送                                                                                                                                                                                  |
+|         参数          |                     说明                      |
+| :-------------------: | :-------------------------------------------: |
+|   _**QYWX_CORPID**_   |                    corpid                     |
+|  _**QYWX_AGENTID**_   |                    agentid                    |
+| _**QYWX_CORPSECRET**_ |                  corpsecret                   |
+|   _**QYWX_TOUSER**_   |                    touser                     |
+|  _**QYWX_MEDIA_ID**_  |                   media_id                    |
+|   _**MERGE_PUSH**_    | **true**: 将推送消息合并；**false**: 分开推送 |
