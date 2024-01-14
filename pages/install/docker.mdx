@@ -24,7 +24,7 @@ import { FileTree } from 'nextra/components'
 运行如下命令一键启动并创建服务
 
 ```bash copy
-curl https://raw.githubusercontent.com/sitoi/dailycheckin/main/docker_start.sh | bash
+curl https://cdn.jsdelivr.net/gh/sitoi/dailycheckin@main/docker_start.sh | bash
 ```
 
 > 运行成功会自动创建如下目录结构, 并成功启动 docker 服务。
@@ -40,21 +40,27 @@ curl https://raw.githubusercontent.com/sitoi/dailycheckin/main/docker_start.sh |
     >
       <FileTree.File name="config.json" />
     </FileTree.Folder>
-    <FileTree.File name="docker-compose.yml" />
+    <FileTree.Folder
+      name="cron"
+      defaultOpen
+    >
+      <FileTree.File name="crontab_list.sh" />
+    </FileTree.Folder>
     <FileTree.Folder
       name="logs"
       defaultOpen
     >
       <FileTree.File name="default_task.log" />
     </FileTree.Folder>
-    <FileTree.File name="Makefile" />
+    <FileTree.File name="docker-compose.yml" />
+
   </FileTree.Folder>
 </FileTree>
 
 - `./config/config.json`: 配置文件
-- `./docker-compose.yml`: docker 启动文件（只在有 docker-compose 的情况下创建）
+- `./cron/crontab_list.sh`: 配置定时任务的文件
 - `./logs`: 日志文件
-- `./Makefile`: make 脚本命令（只在有 docker-compose 的情况下创建）
+- `./docker-compose.yml`: docker 启动文件（只在有 docker-compose 的情况下创建）
 
 ## 二、配置
 
@@ -70,7 +76,23 @@ curl https://raw.githubusercontent.com/sitoi/dailycheckin/main/docker_start.sh |
 
 参考[配置说明文档](/settings/config) ，并修改 `config.json`
 
-## 三、运行
+## 三、定时
+
+修改 `./cron/crontab_list.sh` 文件, 根据实际情况修改下面的默认文件。
+
+```bash filename="crontab_list.sh" copy
+##############默认任务##############
+# 每 12 小时更新 Pipy 包，如果不需要更新 pypi 包请注释掉下面这行
+0 */12 * * * echo "定时任务更新依赖..." && pip install dailycheckin --upgrade --user >> /dailycheckin/logs/update-pypi.log 2>&1
+# 每天的 23:50 分清理一次日志
+50 23 */2 * * rm -rf /dailycheckin/logs/*.log
+
+##############每日签到一次任务##############
+# 每日签到(9:00 执行全部签到)
+0 9 * * * cd /dailycheckin && dailycheckin >> /dailycheckin/logs/dailycheckin.log 2>&1
+```
+
+## 四、运行
 
 #### 运行全部脚本
 
@@ -90,10 +112,16 @@ docker exec -it dailycheckin dailycheckin --include MUSIC163 BAIDU
 docker exec -it dailycheckin dailycheckin --exclude MUSIC163 BAIDU
 ```
 
-## 更新
+## 更新 Pypi
 
 ```bash copy
 docker exec dailycheckin sh /dailycheckin/default_task.sh
+```
+
+## 升级 Docker Image
+
+```bash copy
+curl https://cdn.jsdelivr.net/gh/sitoi/dailycheckin@main/docker_start.sh | bash
 ```
 
 ## 附录

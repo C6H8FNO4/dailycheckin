@@ -63,6 +63,17 @@ const config: DocsThemeConfig = {
       }
     }
   },
+  banner: {
+    key: '2024.1.14-release',
+    text: (
+      <a
+        href="/history/2024-01-14/"
+        target="_blank"
+      >
+        🎉 DailyCheckIn 2024.1.14 is released. Read more →
+      </a>
+    ),
+  },
 }
 
 export default config

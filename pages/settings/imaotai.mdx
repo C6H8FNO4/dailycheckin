@@ -107,6 +107,8 @@ pip install requests~=2.31.0 pycryptodome==3.17
 ```
 ### 运行 python 代码获取配置
 
+#### 修改代码中的 `AMAP_KEY` 需要自己去[高德地图](https://console.amap.com/dev/key/app)申请
+
 ```python filename="login.py" copy
 import hashlib
 import json
@@ -118,7 +120,7 @@ import requests
 """
 获取地点信息,这里用的高德 api,需要自己去高德开发者平台申请自己的 key
 """
-AMAP_KEY = "9b96b9bxxxxxxxf617f163e"
+AMAP_KEY = ""
 
 
 
@@ -288,8 +290,6 @@ if __name__ == "__main__":
         if condition.lower() == "n":
             break
 ```
-
-#### 修改代码中的 `AMAP_KEY` 需要自己去[高德地图](https://console.amap.com/dev/key/app)申请
 
 ### 获取到数据后填入到 `config.json` 中
 
