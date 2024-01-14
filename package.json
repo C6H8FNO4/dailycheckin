@@ -1,6 +1,6 @@
 {
   "name": "dailycheckin-docs",
-  "version": "0.0.1",
+  "version": "2024-01-14",
   "description": "DailyCheckIn docs",
   "scripts": {
     "dev": "next dev",
