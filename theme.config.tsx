@@ -64,10 +64,10 @@ const config: DocsThemeConfig = {
     }
   },
   banner: {
-    key: '2024.1.14-release',
+    key: '2024.1.16-release',
     text: (
       <a
-        href="/dailycheckin/history/2024-01-14/"
+        href="/dailycheckin/history/2024-01-16/"
         target="_blank"
       >
         🎉 DailyCheckIn 2024.1.14 is released. Read more →
