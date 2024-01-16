@@ -70,7 +70,7 @@ const config: DocsThemeConfig = {
         href="/dailycheckin/history/2024-01-16/"
         target="_blank"
       >
-        🎉 DailyCheckIn 2024.1.14 is released. Read more →
+        🎉 DailyCheckIn 2024.1.16 is released. Read more →
       </a>
     ),
   },
