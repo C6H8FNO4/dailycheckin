@@ -1,6 +1,5 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
+import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <span className="nx-text-3xl nx-font-bold">DailyCheckin</span>,
@@ -64,13 +63,13 @@ const config: DocsThemeConfig = {
     }
   },
   banner: {
-    key: '2024.1.16-release',
+    key: '2024.1.20-release',
     text: (
       <a
-        href="/dailycheckin/history/2024-01-16/"
+        href="/dailycheckin/history/2024-01-20/"
         target="_blank"
       >
-        🎉 DailyCheckIn 2024.1.16 is released. Read more →
+        🎉 DailyCheckIn 2024.1.20 is released. Read more →
       </a>
     ),
   },
