@@ -32,8 +32,8 @@
 
 ## ✨ 特性
 
-- 💻 支持使用「Docker」/「青龙面板」/「群晖」/「本地」 部署
 - 📦 支持 Pypi 包安装
+- 💻 支持多个平台部署
 - ⚙️ 支持多个平台签到
 - 📢 支持多个平台通知
 - ♾️ 支持多个账号签到
@@ -45,10 +45,6 @@
 ### 📄 文档教程
 
 [https://sitoi.github.io/dailycheckin/](https://sitoi.github.io/dailycheckin/)
-
-### 🎬 视频教程
-
-[https://www.aliyundrive.com/s/hYC6FziXppq](https://www.aliyundrive.com/s/hYC6FziXppq)
 
 ## 🧾 列表
 
@@ -65,6 +61,7 @@
 | 🟢️  | IQIYI    | [爱奇艺](https://www.iqiyi.com/)                  | 24.01.13 | 签 3 天奖 1 天，7 天奖 1 天，14 天奖 1 天，满签奖 5 天；日常任务 4 成长值；随机成长值；三次抽奖 |
 | 🟢️  | SMZDM    | [什么值得买](https://www.smzdm.com/)              | 24.01.13 | 签到和抽奖                                                                                      |
 | 🟢️  | ALIYUN   | [阿里云盘](https://www.aliyundrive.com/drive/)    | 24.01.13 | 签到获取免费会员和空间                                                                          |
+| 🟢️  | ENSHAN   | [恩山无线论坛](https://www.right.com.cn/forum/)   | 24.01.13 | 签到获取硬币和积分                                                                              |
 | 🟢️  | IMAOTAI  | i 茅台                                            | 24.01.13 | 申购生肖茅台                                                                                    |
 | 🟤   | MIMOTION | 小米运动                                          | 24.01.13 | 每日小米运动刷步数                                                                              |
 | 🟢️  | BAIDU    | [百度站点](https://ziyuan.baidu.com/site/index#/) | 24.01.13 | 提交网站页面供百度收录                                                                          |
