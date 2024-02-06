@@ -2,6 +2,7 @@
   "config": "config.json 配置",
   "notify": "通知配置",
   "acfun":"AcFun",
+  "aolaxing":"奥拉星",
   "aliyun":"阿里云盘",
   "baidu":"百度站点提交",
   "bilibili":"BiliBili",
