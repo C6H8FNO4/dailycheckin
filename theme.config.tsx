@@ -63,13 +63,13 @@ const config: DocsThemeConfig = {
     }
   },
   banner: {
-    key: '2024.1.20-release',
+    key: '2024.2.6-release',
     text: (
       <a
-        href="/dailycheckin/history/2024-01-20/"
+        href="/dailycheckin/history/2024-02-06/"
         target="_blank"
       >
-        🎉 DailyCheckIn 2024.1.20 is released. Read more →
+        🎉 DailyCheckIn 2024.2.6 is released. Read more →
       </a>
     ),
   },

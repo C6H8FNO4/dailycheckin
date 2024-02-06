@@ -61,20 +61,18 @@ import { Steps } from 'nextra/components'
   />
 </Cards>
 
-# V2EX
+# 奥拉星
 
 ### 配置示例
 
 ```json filename="config.json" copy
 {
-  "V2EX": [
+  "AOLAXING": [
     {
-      "cookie": "_ga=xxxxxx; __cfduid=xxxxxx; PB3_SESSION=xxxxxx; A2=xxxxxx; V2EXSETTINGS=xxxxxx; V2EX_REFERRER=xxxxxx; V2EX_LANG=xxxxxx; _gid=xxxxxx; V2EX_TAB=xxxxxx;",
-      "proxy": "使用代理的信息，无密码例子: http://127.0.0.1:1080 有密码例子: http://username:password@127.0.0.1:1080"
+      "cookie": "BT_AUTO_tt_common=; Hm_lpvt_7fc3681c21a26a2022ae0ca72e2d6fa5=xxxxxx; BT_LOGIN_tt_common=:187xxxxxx; Hm_lvt_7fc3681c21a26a2022ae0ca72e2d6fa5=xxxxxx;"
     },
     {
-      "cookie": "多账号 cookie 填写，请参考上面，cookie 以实际获取为准（遇到特殊字符如双引号\" 请加反斜杠转义）",
-      "proxy": "使用代理的信息，无密码例子: http://127.0.0.1:1080 有密码例子: http://username:password@127.0.0.1:1080"
+      "cookie": "多账号 cookie 填写，请参考上面，cookie 以实际获取为准（遇到特殊字符如双引号\" 请加反斜杠转义）"
     }
   ]
 }
@@ -82,26 +80,27 @@ import { Steps } from 'nextra/components'
 
 ### 配置说明
 
-|       参数        |                     说明                     |
-| :---------------: | :------------------------------------------: |
-| _**V2EX**_.cookie |                V2EX 每日签到                 |
-| _**V2EX**_.proxy  | V2EX 代理的信息，例子: http://127.0.0.1:1080 |
+|         参数          |     说明      |
+| :-------------------: | :-----------: |
+| _**AOLAXING**_.cookie | 奥拉星 cookie |
 
 ## 获取方式
 
 <Steps>
 ### 打开官网
  
-进入[V2EX](https://www.v2ex.com/)
+进入[奥拉星](http://www.100bt.com/m/creditMall/?gameId=2#task)
 
 ### 打开开发者工具
 
 按 `F12` 打开开发者工具，刷新页面
 
-### 使用下面的 JavaScript 代码复制所有 cookie
+### 点击 Network 标签
 
-```js copy
-copy(document.cookie)
-```
+### 选择 Doc 标签
+
+### 选中 http://www.100bt.com/m/creditMall/?gameId=2
+
+### 下滑找到 cookie 全选复制即可
 
 </Steps>
