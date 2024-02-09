@@ -42,8 +42,6 @@
 
 ## 🦄 教程
 
-### 📄 文档教程
-
 [https://sitoi.github.io/dailycheckin/](https://sitoi.github.io/dailycheckin/)
 
 ## 🧾 列表

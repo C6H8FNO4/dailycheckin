@@ -108,16 +108,54 @@ import { Steps } from 'nextra/components'
 ## 获取方式
 
 <Steps>
-### 安装依赖项
- 
-```bash copy
-pip install requests~=2.31.0 pycryptodome==3.17
-```
-### 运行 python 代码获取配置
 
-#### 修改代码中的 `AMAP_KEY` 需要自己去[高德地图](https://console.amap.com/dev/key/app)申请
+## 获取高德地图 APP Key
 
-```python filename="login.py" copy
+打开高德开放平台 [https://console.amap.com/dev/key/app](https://console.amap.com/dev/key/app)
+
+### 点击「我的应用」
+
+![](../img/imaotai/gd-1.png)
+
+### 点击「创建新应用」
+
+![](../img/imaotai/gd-2.png)
+
+### 新建应用
+
+![](../img/imaotai/gd-3.png)
+
+### 点击「添加 Key」
+
+![](../img/imaotai/gd-4.png)
+
+### 创建 Key
+
+输入 「Key 名称」 -> 选择 「Web 端」
+
+![](../img/imaotai/gd-5.png)
+
+### 复制 key
+
+![](../img/imaotai/gd-6.png)
+
+## 获取「i 茅台」账号配置信息
+
+网页在线平台 [https://lightly.teamcode.com/dashboard](https://lightly.teamcode.com/dashboard)
+
+### 新建 Python 项目
+
+新建一个 Python 项目 将以下内容复制到 main.py，复制完后将刚刚申请的 KEY 填写进去保存
+
+![](../img/imaotai/code-1.png)
+
+### 编辑 main.py 文件
+
+将以下内容复制到 `main.py`，复制完后将刚刚申请的 KEY 填写到 AMAP_KEY 中并保存。
+
+![](../img/imaotai/code-2.png)
+
+```python filename="main.py" copy
 import hashlib
 import json
 import time
@@ -299,6 +337,28 @@ if __name__ == "__main__":
             break
 ```
 
-### 获取到数据后填入到 `config.json` 中
+### 点击「终端」安装依赖项
+
+![](../img/imaotai/code-3.png)
+
+```bash copy
+pip install requests~=2.31.0 pycryptodome==3.17
+```
+
+![](../img/imaotai/code-4.png)
+
+### 运行 python 代码获取配置
+
+![](../img/imaotai/code-5.png)
+
+### 根据终端的提示输出
+
+![](../img/imaotai/code-6.png)
+
+### 最后输出一个 account.json 文件
+
+![](../img/imaotai/code-7.png)
+
+### 复制数据后填入到 `config.json` 中
 
 </Steps>
